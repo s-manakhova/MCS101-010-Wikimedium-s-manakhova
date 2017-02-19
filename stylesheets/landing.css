@@ -10,8 +10,15 @@
 
 .landingWrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1440px;
   margin: 0 auto;
@@ -147,97 +154,96 @@
 }
 
 @media all and (max-width: 1180px) {
-  .landing.bg {
-    background-image: url(../images/index_mockup_ipad.png);
-  }
+  body.landing.bg {
+     background-image: url(../images/index_mockup_ipad.png);
+   }
 
-  .mainSection {
-    width: 1180px;
-    min-width: 1180px;
-    height: 568px;
-  }
+   .mainSection {
+      width: 1180px;
+      height: 568px;
+   }
 
-  .mainSection h2 {
-    font-family: 'PT Sans Caption', sans-serif;
-    font-size: 26px;
-    line-height: 32px;
-  }
+   .mainSection h2 {
+     font-size: 26px;
+     line-height: 32px;
+   }
 
-  .mainSection p {
-    font-size: 18px;
-    line-height: 27px;
-    margin-top: 18px;
-  }
+   .mainSection p {
+     margin-top: 18px;
+     font-size: 18px;
+     line-height: 27px;
+   }
 
-  .mainSection.left section {
-    left: 190px;
-  }
+   .mainSection.center h2 {
+     font-size: 28px;
+     line-height: 37px;
+   }
 
-  .mainSection.right section {
-    right: 190px;
-  }
+   .mainSection.center p {
+     margin-top: 21px;
+   }
 
-  .mainSection .pattern {
-    width: 147px;
-    height: 14px;
-  }
+   .mainSection section {
+     width: 580px;
+     top: 137px;
+   }
 
-  .mainSection.left .pattern {
-      margin-left: -40px;
-  }
+   .mainSection.left section {
+     left: 290px;
+   }
 
-  .mainSection.right .pattern {
-    margin-left: 303px;
-  }
+   .mainSection.right section {
+     right: 190px;
+   }
 
-  .mainSection section {
-    width: 580px;
-    top: 137px;
-  }
+   .mainSection.center section {
+     top: 95px;
+   }
 
-  .mainSection.left section {
-      left: 160px;
-  }
+   .mainSection section figure {
+     width: 147px;
+     height: 14px;
+     margin-top: 100px;
+   }
 
-  .mainSection.center {
-    background-color: #fcfcfc;
-    border-top: 1px solid #f7f7f7;
-    text-align: center;
-  }
+   .mainSection.left section figure {
+     margin-left: -30px;
+   }
 
-  .mainSection.center section {
-    top: 95px;
-  }
+   .mainSection.right section figure {
+     margin-left: 353px;
+   }
 
-  .mainSection.center nav {
-    margin-top: 20px;
-  }
+   .mainSection.center section nav {
+     margin-top: 50px;
+   }
 
-  .mainSection.center nav a {
-    margin: 0 6px;
-  }
+   .mainSection.center section nav a {
+     margin: 0 6px;
+   }
 
-  #mockup1 {
-    top: 85px;
-    right: 0px;
-    width: 521px;
-    height: 470px;
-  }
+   #mockup1 {
+     top: 85px;
+     /*right: 0;*/
+     left: 744px;
+     width: 521px;
+     height: 470px;
+   }
 
-  #mockup2 {
-    top: 87px;
-    left: 100px;
-    width: 380px;
-    height: 478px;
-  }
+   #mockup2 {
+     top: 70px;
+     left: 230px;
+     width: 380px;
+     height: 478px;
+   }
 
-  #mockup3 {
-    top: 72px;
-    right: -444px;;
-    width: 960px;
-    height: 555px;
-  }
-}
+   #mockup3 {
+     top: 72px;
+     right: -300px;
+     width: 960px;
+     height: 555px;
+   }
+ }
 
 @media all and (max-width: 910px) {
 
@@ -311,7 +317,7 @@
 
   #mockup1 {
     top: 375px;
-    right: -34px;
+    left: 390px;
     width: 621px;
     height: 560px;
   }
@@ -330,7 +336,4 @@
     width: 836px;
     height: 483px;
   }
-
-
-
 }

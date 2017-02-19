@@ -181,3 +181,4 @@ article iframe + img {
   article > * {
     width: calc(100% - 40px);
   }
+}
